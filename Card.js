@@ -9,6 +9,8 @@ var {
   TouchableHighlight,
 } = React;
 
+var FlipView = require('./FlipView.js');
+
 
 var Card = React.createClass({
   getInitialState: function() {
@@ -46,10 +48,9 @@ var Card = React.createClass({
       <View>
         <TouchableHighlight 
           onPress={this.flip}
-          style={styles.goButton}
           underlayColor={'transparent'}
         >
-          <View 
+          <FlipView
             side={this.state.side}
           >
             <Text>{this.state.text}</Text>
@@ -57,7 +58,7 @@ var Card = React.createClass({
               source={{uri: this.state.url}}
               style={styles.cardStyle}
             />
-          </View>
+          </FlipView>
         </TouchableHighlight>
       </View>
     );
@@ -68,13 +69,6 @@ var styles = StyleSheet.create({
   cardStyle: {
     width: 200,
     height: 200, 
-  },
-  goButton: {
-  },
-  goButtonText: {
-    fontSize: 18,
-    color: 'white',
-    alignSelf: 'center'
   },
 });
 
