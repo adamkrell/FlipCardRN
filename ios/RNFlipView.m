@@ -6,9 +6,9 @@
 //  Copyright © 2016 Adam Krell. All rights reserved.
 //
 
-#import "FlipView.h"
+#import "RNFlipView.h"
 
-@implementation FlipView
+@implementation RNFlipView
 
 - (void)setSide:(NSString *)side
 {

@@ -9,7 +9,7 @@ var {
   TouchableHighlight,
 } = React;
 
-var FlipView = require('./FlipView.js');
+var RNFlipView = require('./RNFlipView.js');
 
 
 var Card = React.createClass({
@@ -50,7 +50,7 @@ var Card = React.createClass({
           onPress={this.flip}
           underlayColor={'transparent'}
         >
-          <FlipView
+          <RNFlipView
             side={this.state.side}
           >
             <Text>{this.state.text}</Text>
@@ -58,7 +58,7 @@ var Card = React.createClass({
               source={{uri: this.state.url}}
               style={styles.cardStyle}
             />
-          </FlipView>
+          </RNFlipView>
         </TouchableHighlight>
       </View>
     );

@@ -6,20 +6,20 @@
 //  Copyright © 2016 Adam Krell. All rights reserved.
 //
 
-#import "FlipViewManager.h"
-#import "FlipView.h"
+#import "RNFlipViewManager.h"
+#import "RNFlipView.h"
 
 
-@implementation FlipViewManager
+@implementation RNFlipViewManager
 
 RCT_EXPORT_MODULE()
 
 - (UIView *)view
 {
-  return [FlipView new];
+  return [RNFlipView new];
 }
 
-RCT_CUSTOM_VIEW_PROPERTY(side, NSString, FlipView)
+RCT_CUSTOM_VIEW_PROPERTY(side, NSString, RNFlipView)
 {
   view.side = json ? [RCTConvert NSString:json] : @"front";
 }

@@ -22,8 +22,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		B632B3F81C3D6F41008A8459 /* FlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = B632B3F71C3D6F41008A8459 /* FlipView.m */; };
-		B6CA725B1C3D715200F4F1C7 /* FlipViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CA725A1C3D715200F4F1C7 /* FlipViewManager.m */; };
+		B632B3F81C3D6F41008A8459 /* RNFlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = B632B3F71C3D6F41008A8459 /* RNFlipView.m */; };
+		B6CA725B1C3D715200F4F1C7 /* RNFlipViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CA725A1C3D715200F4F1C7 /* RNFlipViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,10 +128,10 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		B632B3F61C3D6F41008A8459 /* FlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipView.h; sourceTree = "<group>"; };
-		B632B3F71C3D6F41008A8459 /* FlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipView.m; sourceTree = "<group>"; };
-		B6CA72591C3D715200F4F1C7 /* FlipViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipViewManager.h; sourceTree = "<group>"; };
-		B6CA725A1C3D715200F4F1C7 /* FlipViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipViewManager.m; sourceTree = "<group>"; };
+		B632B3F61C3D6F41008A8459 /* RNFlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNFlipView.h; sourceTree = "<group>"; };
+		B632B3F71C3D6F41008A8459 /* RNFlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNFlipView.m; sourceTree = "<group>"; };
+		B6CA72591C3D715200F4F1C7 /* RNFlipViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNFlipViewManager.h; sourceTree = "<group>"; };
+		B6CA725A1C3D715200F4F1C7 /* RNFlipViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNFlipViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,10 +245,10 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				B632B3F61C3D6F41008A8459 /* FlipView.h */,
-				B632B3F71C3D6F41008A8459 /* FlipView.m */,
-				B6CA72591C3D715200F4F1C7 /* FlipViewManager.h */,
-				B6CA725A1C3D715200F4F1C7 /* FlipViewManager.m */,
+				B632B3F61C3D6F41008A8459 /* RNFlipView.h */,
+				B632B3F71C3D6F41008A8459 /* RNFlipView.m */,
+				B6CA72591C3D715200F4F1C7 /* RNFlipViewManager.h */,
+				B6CA725A1C3D715200F4F1C7 /* RNFlipViewManager.m */,
 			);
 			name = FlipCardRN;
 			sourceTree = "<group>";
@@ -552,8 +552,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B632B3F81C3D6F41008A8459 /* FlipView.m in Sources */,
-				B6CA725B1C3D715200F4F1C7 /* FlipViewManager.m in Sources */,
+				B632B3F81C3D6F41008A8459 /* RNFlipView.m in Sources */,
+				B6CA725B1C3D715200F4F1C7 /* RNFlipViewManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);

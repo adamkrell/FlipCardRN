@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "RCTView.h"
 
-@interface FlipView : RCTView
+@interface RNFlipView : RCTView
 
 /**
  * Creates a flip transition animation (side = 'front' or 'back').

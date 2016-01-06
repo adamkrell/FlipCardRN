@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "RCTViewManager.h"
 
-@interface FlipViewManager : RCTViewManager 
+@interface RNFlipViewManager : RCTViewManager
 
 @end
